@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Pasta contendo as imagens
-pasta = 'all/archive/test'
+pasta = 'all/archive/train'
 
 # Lista para armazenar os pixels das imagens
 pixels = []
@@ -29,4 +29,4 @@ print(matriz_pixels)
 matrizIndices = np.asarray(matriz_pixels)
 dfIndices = pd.DataFrame(data=matrizIndices)
         
-dfIndices.to_csv('all/archive/test/targets/test.csv', index=False)
+dfIndices.to_csv('all/archive/train/targets/train.csv', index=False)
